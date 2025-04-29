@@ -1,14 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  output: 'export',
   images: {
     unoptimized: true,
   },
+  // Adjust this to match your GitHub repository name
+  basePath: '/Meeting-Memory-Agent',
+  assetPrefix: '/Meeting-Memory-Agent',
+  trailingSlash: true,
 }
 
-export default nextConfig
+export default nextConfig;
